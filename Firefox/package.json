@@ -1,0 +1,61 @@
+{
+  "title": "Messenger™ Web",
+  "name": "imweb",
+  "version": "0.1.0",
+  "description": "Access to messenger.com official Web UI from within a toolbar panel and get badge notification of unread posts",
+  "main": "common.js",
+  "author": "Morni Colhkher",
+  "id": "hYYyYdei8as34ghte@jetpack",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MPL 2.0",
+  "keywords": [
+    "jetpack"
+  ],
+  "permissions": {
+    "private-browsing": true,
+    "multiprocess": true,
+    "unsafe-content-script": true
+  },
+  "preferences": [
+    {
+      "title": "Audio permission",
+      "type": "bool",
+      "name": "audio-permission",
+      "value": false
+    },
+    {
+      "title": "Video permission",
+      "type": "bool",
+      "name": "video-permission",
+      "value": false
+    },
+    {
+      "title": "Picture permission",
+      "type": "bool",
+      "name": "picture-permission",
+      "value": false
+    },
+    {
+      "description": "Width of panel in pixels",
+      "type": "integer",
+      "name": "width",
+      "value": 660,
+      "title": "Panel width:"
+    },
+    {
+      "description": "Height of panel in pixels",
+      "type": "integer",
+      "name": "height",
+      "value": 700,
+      "title": "Panel height:"
+    },
+    {
+      "title": "Display FAQs page on upgrades",
+      "type": "bool",
+      "name": "welcome",
+      "value": true
+    }
+  ]
+}
